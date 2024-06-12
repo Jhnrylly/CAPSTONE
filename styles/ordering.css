@@ -1,0 +1,545 @@
+*{
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  scroll-behavior: smooth;
+}
+
+.layout{
+  display: block;
+  position: relative;
+  width: 100%;
+  height: 100vh;
+}
+
+.left-container{
+  float: left;
+  width: 80%;
+  height: 100%;
+}
+
+.right-container{
+  float: right;
+  width: 19.90%;
+  height: 100%;
+  border-left: 1px solid black;
+}
+
+.welcome-container{
+  width: 100%;
+  height: 35%;
+  display: flex;
+  border-bottom: 1px solid ;
+}
+
+.welcome{
+  width: 100%;
+  margin: 20px;
+}
+
+.button-logo{
+  display: flex;
+  height: 40%;
+}
+
+.back-button{
+  margin-right: 38.2%;
+}
+
+.back-button a img{
+  width: 50%;
+}
+
+.img-logo > img{
+  width: 100px;
+  height: 100px;
+}
+
+.order-button-container{
+  width: 100%;
+  height: 64%;    
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+ul.navbar{
+box-sizing: border-box;
+display: inline-flex;
+justify-content:flex-start;
+margin-top: 40px;
+}
+
+ul.navbar li{
+  display: flex;
+  padding: 6px 10px;
+  border: 1px solid black;
+  border-radius: 5px;
+  margin: 5px;
+}
+
+.navbar li a{
+  text-decoration: none;
+  list-style: none;
+  color: black;
+  transition: all 0.3s ease 0s;
+}
+
+.navbar li a.active {
+  background-color: #B88E72; /* Adjust color as needed */
+  color: white;  /* Adjust color as needed */
+}
+
+h2{
+padding: 20px;
+}
+
+.order-list-container{
+  width: 100%;
+  height: 65%;
+}
+.order-list-grid button {
+  border:none
+}
+
+.order-overflow{
+  height: 100%;
+  width: 100%;
+  overflow-y: scroll;
+  scrollbar-width: none;
+}
+
+.order-list-grid{
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+}
+
+.order-container{
+  padding-top: 20px;
+  padding-bottom: 25px;
+  padding-left: 25px;
+  padding-right: 25px;
+  border-right: 1px solid rgb(218, 215, 215);
+  border-bottom: 1px solid rgb(219, 219, 219);
+  border-top: 1px solid rgb(219, 219, 219);
+  display: flex;
+  flex-direction: column;
+  
+}
+
+.order-image-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 120px;
+  margin-bottom: 20px;
+}
+
+.order-image-container button{
+  border: none;
+}
+
+.order-image{
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.order-image img{
+  overflow-clip-margin: content-box;
+  overflow: clip;
+}
+
+.order-name{
+  height: 40px;
+  margin-bottom: 5px;
+  text-align: center;
+}
+
+.order-name h4{
+  font-size: 15px;
+}
+
+.popup-box .order-name h4{
+  font-size: 30px;
+}
+
+.limit-text-to-2-lines {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+.order-price{
+  font-weight: 700;
+  text-align: center;
+  font-size: 14px;
+}
+
+/* RIGHT CONTAINER */
+.my-order-list-container{
+  width: 100%;
+  height: 56%;
+}
+
+.right-text{
+  margin-top: 20px;
+  margin-left: 10px;
+}
+
+.right-text h2{
+  padding: 0;
+  
+}
+
+.right-text h3{
+  font-weight: 200;
+  margin: 0;
+
+}
+
+.my-order-list{
+  width: 100%;
+  height: 100%;
+  overflow-y: scroll;
+  scrollbar-width: none;
+}
+
+/* right-cart-total container */
+.my-order-total-container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 32%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.my-order-total-submit{
+  text-align: center;
+}
+
+.my-order-total-submit > hr.line{
+  border: 1px solid black;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.my-order-total-submit h2{
+  margin: 0;
+  padding: 0;
+  margin-bottom: 10px;
+  font-size: 40px;
+}
+
+.my-order-total-submit h3{
+  font-size: 15px;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 15px;
+}
+
+.submit-order{
+  font-size: 20px;
+  padding: 30px;
+  border-radius: 10%;
+  background-color: #B88E72;
+  color: white;
+}
+
+.popup-box {
+  display: none; /* Hide popup initially */
+  position: fixed; 
+  z-index: 1;  
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%); /* Center the popup */
+  width: 30%;
+  height: auto;
+  background-color: white;
+  border: 1px solid black;
+  border-radius: 25px;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2); 
+  padding: 10px;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
+.popup-box .order-container{
+  border-color: white;
+}
+
+.popup-box .order-price{
+  margin-top: 10px;
+  font-size:  15px;
+}
+
+.close {
+  position: absolute; 
+  right: 25px; 
+  top: 0; 
+  font-size: 30px; 
+  font-weight: bold; 
+  cursor: pointer; 
+}
+
+.close1 {
+  position: absolute; 
+  right: 25px; 
+  top: 0; 
+  font-size: 30px; 
+  font-weight: bold; 
+  cursor: pointer; 
+}
+
+.close:hover {
+  color: red; 
+}
+
+.product {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.quantity-control {
+  display: flex;
+  align-items: center;
+}
+
+.quantity-control button {
+  width: 35px;
+  height: 35px;
+  background-color: #eee;
+  border: none;
+  cursor: pointer;
+}
+
+.quantity-control input {
+  width: 60px;
+  height: 30px;
+  text-align: center;
+  border: 1px solid #ccc;
+  
+}
+
+.quantity-control{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 50px ;
+}
+
+#calculator{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+#calculator input,
+#calculator select {
+  width: 20%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  margin-left: 25px;
+}
+
+.size-order{
+  display: flex;
+  align-items: center;
+  justify-content: center;  
+  margin-bottom: 35px ;
+}
+
+.size-order input{
+  margin: 0 15px;
+}
+
+.popup-box-total{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 50px;
+}
+
+.popup-box-total button{
+  padding: 20px;
+  margin-left: 50px;
+  border-radius: 1px solid;
+  width: 160px;
+  background-color: #B88E72;
+  color: white;
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+/* payment method */
+.queue-number{
+  position: fixed; 
+  z-index: 1;  
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%); /* Center the popup */
+  width: 30%;
+  height: auto;
+  background-color: white;
+  border: 1px solid black;
+  border-radius: 25px;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2); 
+  padding: 50px;
+}
+
+.queue-number{
+  display: flex;
+  justify-content: space-around;
+}
+
+
+.queue-number #cash img{
+  width: 200px;
+}
+
+.queue-number #gcash img{
+  width: 200px;
+}
+
+/* New CART Container */
+
+.my-order-grid{
+  display: grid;
+  grid-template-columns: 90px 190px 90px;
+  grid-template-rows: 85px;
+}
+
+.my-order-duplicate{
+  cursor: pointer;
+}
+
+.my-order-img img{
+  width: 70px;
+  position: relative;
+  top: 10px;
+  left: 15px;
+}
+
+.order-food-description{
+  margin: 12px 10px;
+}
+
+.order-food-description h3{
+  font-size: 18px;
+}
+
+.order-food-description h4{
+  font-size: 11px;
+  margin-bottom: 10px;
+}
+
+.order-food-description h5{
+  font-size: 13px;
+}
+
+.order-food-description h5 span{
+  margin-left: 20px;
+}
+
+.my-order-food-total button{
+  background-color: white;
+  border: none;
+  margin-left: 10px;
+}
+
+.my-order-food-total img{
+  width: 20px;
+  margin-left: 40px;
+}
+
+.my-order-food-total .food-total h5{
+  margin: 35px 0;
+  font-size: 15px;
+}
+
+.my-order-food-total hr{
+  width: 87%;
+  margin-left: 20px;
+}
+
+.popup-cart{
+  display: none;
+  position: fixed; 
+  z-index: 25;  
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%); /* Center the popup */
+  width: 30%;
+  height: auto;
+  background-color: white;
+  border: 1px solid black;
+  border-radius: 25px;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2); 
+  padding: 20px;
+  text-align: center;
+}
+
+.popup-cart img{
+  width: 150px;
+  margin-bottom: 5px;
+}
+
+.popup-cart-name{
+  margin-bottom: 10%;
+}
+
+.popup-cart-button button{
+  padding: 20px;
+  border-radius: 10px;
+  width: 160px;
+  background-color: #B88E72;
+  color: white;
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+
+
+@media (max-width: 2000px){
+.order-list-grid{
+  grid-template-columns: repeat(7, 1fr);
+}
+}
+
+@media (max-width: 1600px){
+.order-list-grid{
+  grid-template-columns: repeat(6, 1fr);
+}
+}
+
+@media (max-width: 1460px){
+.order-list-grid {
+  grid-template-columns: repeat(5, 1fr);
+}
+}
+
+@media (max-width: 1000px){
+.order-list-grid {
+  grid-template-columns: repeat(4, 1fr);
+}
+}
+
+@media (max-width: 800px){
+.order-list-grid {
+  grid-template-columns: repeat(3, 1fr);
+}
+}
+
+@media (max-width: 575px){
+.order-list-grid {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+}

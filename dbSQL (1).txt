@@ -1,0 +1,125 @@
+CREATE TABLE products (
+    id INT PRIMARY KEY,
+    image VARCHAR(255),
+    name VARCHAR(255),
+    pricePeso DECIMAL(10,2),
+    category VARCHAR(50)
+);
+
+INSERT INTO products (id, image, name, pricePeso, category) VALUES
+
+(1, './images/Tapsilog.png', 'Tapsilog', 85, 'silog'),
+(2, './images/porksilog.png', 'Porksilog', 85, 'silog'),
+(3, './images/chicksilog.png', 'Chicksilog', 70, 'silog'),
+(4, './images/hotsilog.png', 'Hotsilog', 60, 'silog'),
+(5, './images/longsilog.png', 'Longsilog', 60, 'silog'),
+(6, './images/spamsilog.png', 'Spamsilog', 55, 'silog'),
+(7, './images/shanghaisilog.png', 'Shanghaisilog', 55, 'silog'),
+(8, './images/siomaisilog.png', 'Siomaisilog', 50, 'silog'),
+(9, './images/siomairice.png', 'Siomairice', 40, 'silog'),
+(11, './images/charlie-chan.png', 'Charlie Chan', 75, 'snacks'),
+(12, './images/nachos.png', 'Nachos', 60, 'snacks'),
+(13, './images/fries.png', 'Fries', 30, 'snacks'),
+(14, './images/siomai.png', 'Siomai', 25, 'snacks'),
+
+-- beverages
+(15, './images/coffee.png', 'Coffee', 49, 'beverages'),
+(16, './images/choco.png', 'Choco', 49, 'beverages'),
+(17, './images/cappucino.png', 'Cappucino', 49, 'beverages'),
+(18, './images/mocha.png', 'Mocha', 49, 'beverages'),
+(19, './images/latte.png', 'Latte', 49, 'beverages'),
+(20, './images/classicM.png', 'Classic', 56, 'milktea'),
+(21, './images/creamchesseM.png', 'Cream Cheese Series', 79, 'milktea'),
+(22, './images/cheesecakeM.png', 'Cheesecake Series', 79, 'milktea'),
+(23, './images/oreoM.png', 'Oreo Series', 79, 'milktea'),
+(24, './images/wintermelonM.png', 'Wintermelon', 79, 'milktea'),
+(25, './images/okinawaM.png', 'Okinawa', 79, 'milktea'),
+(26, './images/hokkaidoM.png', 'Hokaido', 79, 'milktea'),
+(27, './images/taroM.png', 'Taro', 79, 'milktea'),
+(28, './images/vanillaM.png', 'Vanilla', 79, 'milktea'),
+(29, './images/hazelnutM.png', 'Hazelnut', 79, 'milktea'),
+(30, './images/darkchocoM.png', 'Dark Choco', 79, 'milktea'),
+(31, './images/chocoM.png', 'Choco', 79, 'milktea'),
+(32, './images/cacM.png', 'Cookies and Cream', 79, 'milktea'),
+(33, './images/strawberryM.png', 'Strawberry', 79, 'milktea'),
+(34, './images/matchaM.png', 'Matcha', 79, 'milktea'),
+(35, './images/greenappleF.png', 'Green Apple', 59, 'fruit'),
+(36, '../images/lichiF.png', 'Lichi', 59, 'fruit'),
+(37, './images/strawberryF.png', 'Strawberry', 59, 'fruit'),
+(38, './images/passionF.png', 'Passion Fruit', 59, 'fruit'),
+(39, './images/javachips.png', 'Java Chips', 110, 'frappucino'),
+(40, './images/mochaccino.png', 'Mochaccino', 110, 'frappucino'),
+(41, './images/saltedcaramel.png', 'Salted Caramel', 110, 'frappucino'),
+(42, './images/cappucinof.png', 'Cappuccino', 110, 'frappucino'),
+(43, './images/hazelnut.png', 'Hazelnut', 110, 'frappucino'),
+(44, './images/mochaf.png', 'Mocha', 110, 'frappucino'),
+(45, './images/chocohazel.png', 'Choco Hazelnut', 110, 'frappucino'),
+(46, './images/mangoO.png', 'Mango Oreo', 75, 'mango'),
+(47, './images/mangoG.png', 'Mango Graham', 75, 'mango'),
+(48, './images/mangoS.png', 'Mango Strawberry', 75, 'mango'),
+(49, './images/mangoC.png', 'Mango Caramel', 75, 'mango'),
+(50, './images/classiclatte.png', 'Classic Latte', 60, 'latte'),
+(51, './images/vanillalatte.png', 'Vanilla Latte', 60, 'latte'),
+(52, './images/almondlatte.png', 'Almond Latte', 60, 'latte'),
+(53, './images/saltedlatte.png', 'Salted Caramel', 60, 'latte'),
+(54, './images/hazelnutlatte.png', 'Hazelnut', 60, 'latte'),
+(55, './images/mochalatte.png', 'Mochaccino', 60, 'latte'),
+
+-- milkshake
+(56, './images/chocomilk.png', 'Choco Kisses', 40, 'milkshake'),
+(57, './images/bukoM.png', 'Buko Pandan', 40, 'milkshake'),
+(58, './images/cacmilk.png', 'Cookes and Cream', 40, 'milkshake'),
+(59, './images/mangoM.png', 'mango', 40, 'milkshake'),
+
+-- creamy
+(60, './images/creamyM.png', 'Matcha', 110, 'creamy'),
+(61, './images/creamyT.png', 'Taro', 110, 'creamy'),
+(62, './images/creamyS.png', 'Salted Caramel', 110, 'creamy'),
+(63, './images/creamyD.png', 'Dark Choco', 110, 'creamy'),
+(64, './images/javachips.png', 'Jaca Chips', 110, 'creamy'),
+(65, './images/hazelnut.png', 'Choco Hazelnut', 110, 'creamy'),
+(66, './images/americanoCB.png', 'Americano', 59, 'americano'),
+(67, './images/vanillaCB.png', 'Vanilla', 59, 'americano'),
+(68, './images/almondCb.png', 'Almond', 59, 'americano'),
+(69, './images/hazelnutCB.png', 'Hazelnut', 59, 'americano'),
+(70, './images/saltedCB.png', 'Salted Caramel', 59, 'americano');
+
+
+
+
+
+-- Create table for superusers
+CREATE TABLE Superusers (
+    user_id INT AUTO_INCREMENT PRIMARY KEY,
+    username VARCHAR(50) UNIQUE NOT NULL,
+    password VARCHAR(100) NOT NULL,
+    email VARCHAR(100) UNIQUE NOT NULL,
+    role VARCHAR(20) NOT NULL,
+);
+
+-- Insert new superuser accounts for each role
+INSERT INTO Superusers (username, password, email, role) 
+VALUES 
+    ('admin1', 'adminpassword1', 'admin1@example.com', 'admin'),
+    ('manager1', 'managerpassword1', 'manager1@example.com', 'manager'),
+    ('cashier1', 'cashierpassword1', 'cashier1@example.com', 'cashier'),
+    ('clerk1', 'clerkpassword1', 'clerk1@example.com', 'clerk');
+
+
+CREATE TABLE orders (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    product_name VARCHAR(255) NOT NULL,
+    quantity INT NOT NULL,
+    price DECIMAL(10, 2) NOT NULL,
+    total_price DECIMAL(10, 2) NOT NULL,
+    order_date TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+
+CREATE TABLE order_history (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    product_name VARCHAR(255) NOT NULL,
+    quantity INT NOT NULL,
+    price DECIMAL(10, 2) NOT NULL,
+    total_price DECIMAL(10, 2) NOT NULL,
+    order_date TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);

@@ -1,0 +1,161 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: "Poppins";
+    font-weight: 600;
+}
+
+.dashboard-container{
+    width: 100%;
+    height: 88vh;
+    background-color: #4fa37d;
+}
+
+.dashboard{
+    width: 96%;
+    height: 100%;
+    padding: 30px;
+    color: white;
+}
+
+.tag h1{
+    font-size: 50px;
+    font-weight: 600;
+}
+
+.dashboard-grid{
+    margin-top: 15px;
+    margin-left: 3%;
+    display: grid;
+    grid-template-columns: 350px 350px 350px 550px;
+    grid-template-rows: 10vh 60vh;
+    gap: 20px;
+    
+}
+
+.dashboard-grid div{
+    border-radius: 25px;
+}
+
+.top-box {
+    background-color: white;
+    color: #31363F;
+    padding: 8px 30px;
+}
+
+.top-box h2{
+    font-size: 15px;
+    
+}
+
+.top-box h3{
+    font-size: 40px;
+    
+}
+
+.best-food{
+    background-color: white;
+    color: #31363F;
+    padding: 8px 30px;
+    grid-area: 1/4/4/4;
+}
+ 
+
+.sales-graph{
+    background-color: white;
+    grid-area: 2/1/4/4;
+}
+
+.sales-graph h2{
+    padding: 15px;
+    color: #31363F;
+    font-size: 14px;
+}
+
+.users-body{
+    display: none;
+    width: 100%;
+    height: 88vh;
+    background-color: #4fa37d;
+}
+
+.users-container{
+    width: 100%;
+    height: 100%;
+    height: 88vh;
+}
+
+.users-contain{
+    position: relative;
+    top: 3%;
+    left: 5%;
+    width: 88%;
+    height: 85vh;
+    background-color: white;
+    border-radius: 50px;
+}
+
+.users-contain h2{
+    padding: 25px;
+    padding-top: 35px;
+    
+}
+
+.users-contain #button-add{
+    position: relative;
+    bottom: 15px;
+    margin-right: 70px;
+    padding: 20px;
+    border-radius: 15px;
+    float: right;
+    background-color: #4fa37d;
+    color: white;
+}
+
+.account-container{
+    margin-top: 5%;
+    margin-left: 11%;
+    width: 75%;
+    height: 70%;
+}
+
+.account-container-scroll{
+    height: 100%;
+    width: 100%;
+    overflow-y: scroll;
+    scrollbar-width: none;
+}
+
+table, td, th {
+    border: 1px solid;
+}
+
+.account-container-table{
+    margin-left: 35px;
+}
+
+
+.dashboard-users-button{
+    width: 100%;
+    height: 12vh;
+    background-color: #4fa37d;
+    display: flex;
+    justify-content: center;
+}
+
+.dashboard-users-button button{
+    width: 200px;
+    height: 70px;
+    padding: 20px;
+    margin-top: 20px;
+    border: none;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    border: 1px solid black;
+}
+
+.dashboard-users-button button.active {
+    background-color: #007bff;
+    color: white;
+}

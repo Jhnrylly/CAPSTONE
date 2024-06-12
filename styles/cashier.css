@@ -1,0 +1,543 @@
+*{
+ margin: 0;
+ padding: 0;
+ font-family: "Poppins", sans-serif;
+}
+
+.body-container{
+    width: 100%;
+    height: 100vh;
+}
+
+.left-container{
+    float: left;
+    width: 70%;
+    height: 100%;
+    background-color: #f2f3f3;
+}
+
+.process-button-container{
+    padding: 25px 30px;
+    width: 100%;
+}
+
+.process-button-container button{
+    border-radius: 70px;
+}
+
+.ongoing-orders-list-container{
+    width: 100%;
+    height: 90.5%;
+    padding: 25px 30px;
+    overflow-y: scroll;
+    scrollbar-width: none;
+}
+
+.ongoing-orders-list-grid{
+    display: grid;
+    grid-template-rows: repeat(1, 120px);
+    gap: 30px;
+}
+
+
+.ongoing-orders-list{
+    background-color: white;
+    border-radius: 25px;
+    padding: 25px 15px;
+    
+}
+
+
+.ongoing-order-time{
+    float: right;
+    position:relative;
+    bottom: 43px;
+    right: 15px;
+}
+
+.ongoing-order-cost{
+    float: right;
+    position: relative;
+    bottom: 32px;
+    left: 50px;
+    display: flex;
+}
+
+.ongoing-order-process{
+    border: 1px solid #4fa37d;
+    border-radius: 50px;
+    background-color: #4fa37d;
+    padding: 0 15px;
+    color: white;
+    margin: auto;
+    position: relative;
+    bottom: 4px;
+    left: 30px;
+}
+
+.right-container{
+    float: right;
+    width: 30%;
+    height: 100%;
+    background-color: #f2f3f3;
+}
+
+.right-border-container{
+    border: 1px solid #f2f3f3;
+    background-color: white;
+    width: 90%;
+    height: 95%;
+    margin: 4%;
+    border-radius: 25px;
+}
+
+.right-border-display{
+    width: 100%;
+    height: 80%;
+
+}
+
+.order-description{
+    margin: 20px;
+}
+
+.discount-button{
+    float: right;
+    position: relative;
+    bottom: 75px;
+    right: 50px;
+}
+
+.discount-button button{
+    padding: 20px;
+    border: none;
+    border-radius: 10px;
+    background-color: #3572EF;
+    color: white;
+}
+
+.void-button{
+    float: right;
+    position: relative;
+    bottom: 75px;
+    right: 30px;
+}
+
+.void-button button{
+    padding: 20px;
+    border: none;
+    border-radius: 10px;
+    background-color: rgb(243, 83, 83);
+    color: white;
+}
+
+.order-food-list-grid{
+    width: 100%;
+    height: 60%;
+    display: grid;
+    grid-template-rows: repeat(1, 120px);
+    overflow-y: scroll;
+    scrollbar-width: none;
+}
+
+.ongoing-food-grid{
+    display: grid;
+    grid-template-columns: 100px 250px 80px;
+    grid-template-rows: 85px;
+    margin: 0 40px;
+}
+
+.ongoing-img img{
+    width: 100px;
+}
+
+.ongoing-food-description{
+    margin: 12px 10px;
+}
+
+.ongoing-food-description h3{
+    font-size: 18px;
+}
+
+.ongoing-food-description h4{
+    font-size: 11px;
+    margin-bottom: 10px;
+}
+
+.ongoing-food-description h5{
+    font-size: 13px;
+}
+
+.ongoing-food-description h5 span{
+    margin-left: 20px;
+}
+
+.ongoing-food-total button{
+    background-color: white;
+    border: none;
+    margin-left: 10px;
+}
+
+.ongoing-food-total img{
+    width: 30px;
+}
+
+.ongoing-food-total .food-total h5{
+    margin: 35px 5px;
+    font-size: 15px;
+}
+
+.ongoing-food hr{
+    width: 87%;
+    margin-left: 20px;
+}
+
+.total-payment-container{
+    width: 100%;
+    height: 20%;
+    border-top: 1px solid rgb(235, 233, 233);
+}
+
+.total-payment-container.no-border {
+    position: relative;
+    top: 80%;
+  }
+
+.payment-total-items{
+    margin-top: 15px;
+}
+
+.payment-total-items h3{
+    display: flex;
+    justify-content: space-between;
+    margin: 0 60px;
+    font-size: 15px;
+    
+}
+
+.payment-total-items h5{
+    display: flex;
+    justify-content: space-between;
+    margin: 0 60px;
+    font-size: 15px;
+    margin-top: 15px;
+}
+
+.total-payment{
+    display: flex;
+    margin-top: 35px;
+    margin-left: 60px;
+}
+
+.total-payment button{
+    width: 220px;
+    height: 50px;
+    border: none;
+    border-radius: 25px;
+    background-color: #4fa37d;
+    color: white;
+}
+
+.total-payment h2{
+    font-size: 20px;
+    margin: auto;
+}
+
+/* The Close Button */
+.close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.popup-box {
+    display: none;
+    position: fixed; 
+    z-index: 1;  
+    left: 40%;
+    top: 45%;
+    transform: translate(-50%, -50%); /* Center the popup */
+    width: 30%;
+    height: auto;
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 25px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2); 
+    padding: 10px;
+}
+
+.popup-box span{
+    float: right;
+}
+
+.popup-box .close{
+    width: 25px;
+}
+
+.popup-content{
+    text-align: center;
+}
+
+.popup-content img{
+    width: 150px;
+    margin-left: 5%;
+}
+
+.popup-content h2{
+    font-size: 15px;
+}
+
+.popup-content h3{
+    font-size: 15px;
+}
+
+.popup-content .size-order{
+    margin: 30px 0;
+    font-size: 14px;
+}
+
+.popup-content #calculator{
+    margin: 30px 0;
+    font-size: 15px;
+}
+
+.popup-content #calculator select{
+    border: 1px solid black;
+}
+.popup-content .quantity-control{
+    margin-top: 30px;
+}
+
+
+.popup-content .quantity-control input#quantity{
+    width: 50px;
+    margin-bottom: 30px;
+    text-align: center;
+    border: 1px solid black;
+    scrollbar-width: none;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
+.popup-content .quantity-control button{
+    width: 40px;
+    border: 1px solid rgb(190, 186, 186) ;
+}
+
+.popup-content #update-confirm{
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #4fa37d;
+    color: white;
+}
+
+.popup-discount-box {
+    display: none;
+    position: fixed; 
+    z-index: 1;  
+    left: 40%;
+    top: 45%;
+    transform: translate(-50%, -50%); /* Center the popup */
+    width: 40%;
+    height: 50%;
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 25px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2); 
+    padding: 10px; 
+}
+
+.popup-discount-box .close{
+    float: right;
+    width: 25px;
+}
+
+.popup-discount-box-content{
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    overflow-y: scroll;
+    scrollbar-width: none;
+}
+
+.popup-discount-box img{
+    width: 100px;
+}
+
+.popup-discount-box h2{
+    text-align: center;
+    margin-top: 30px;
+    font-size: 18px;
+}
+
+.popup-discount-box .quantity-control{
+    margin: 5px auto;
+}
+
+.popup-discount-box-content .quantity-control button{
+    width: 30px;
+    border: 1px solid black;
+}
+
+.popup-discount-box-content .quantity-control input#quantity{
+    width: 50px;
+    text-align: center;
+    margin-top: 25px;
+    border: 1px solid black;
+}
+
+.popup-discount-box-content .checkbox-discount{
+    margin: auto;
+}
+
+.popup-discount-box-content .checkbox-discount input{
+    padding: 20px;
+}
+
+.checkbox-discount {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    cursor: pointer;
+    font-size: 22px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.checkbox-discount input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+.checkmark {
+    position: absolute;
+    top: -15px;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: #eee;
+    border: 1px solid black;
+}
+
+.checkbox-discount:hover input ~ .checkmark {
+    background-color: #ccc;
+}
+
+.checkbox-discount input:checked ~ .checkmark {
+    background-color: #2196F3;
+}
+
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+.checkbox-discount input:checked ~ .checkmark:after {
+    display: block;
+}
+
+.checkbox-discount .checkmark:after {
+    left: 9px;
+    top: 5px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+.popup-pay-box{
+    display: none;
+    position: fixed; 
+    z-index: 1;  
+    left: 40%;
+    top: 50%;
+    transform: translate(-50%, -50%); /* Center the popup */
+    width: 30%;
+    height: 50%;
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 25px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2); 
+    padding: 10px; 
+}
+
+.popup-pay-box-content{
+    padding: 10px;
+}
+
+.popup-pay-box-content span{
+    position: absolute;
+    left: 92%;
+    top: 2%;
+}
+
+.popup-pay-box .popup-total{
+    margin-top: 5%;
+}
+
+.popup-pay-box .popup-total h3{
+    font-size: 20px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.popup-pay-box .popup-pay-change{
+    margin-top: 10%;
+}
+
+.popup-pay-box .popup-pay-change label{
+    margin-left: 22%;
+}
+
+.popup-pay-box .popup-pay-change input{
+    border: 1px solid rgb(121, 120, 120);
+    text-align: center;
+    margin-bottom: 7%;
+}
+
+.popup-pay-box .popup-pay-change h3{
+    display: flex;
+    justify-content:space-evenly;
+    font-size: 20px;
+    margin-left: 5.5%;
+}
+
+.popup-pay-box .popup-pay-change > h4{
+    display: flex;
+    justify-content:space-evenly;
+    font-size: 20px;
+}
+
+.popup-pay-box .pay-button{
+    margin-top: 8%;
+    display: flex;
+    justify-content: center;
+}
+
+.popup-pay-box .pay-button button{
+    padding: 20px;
+    width: 40%;
+    border-radius: 25px;
+    border: none;
+    background-color: #4fa37d;
+    color: white;
+}
